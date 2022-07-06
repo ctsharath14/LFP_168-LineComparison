@@ -1,4 +1,4 @@
-//check equality of two lines based on the end points, So that I know when two lines are the equal.
+//compare two lines based on the end points, So that I know one line is equal, greater or less than the other line.
 
 import java.util.Scanner;
 
@@ -31,11 +31,14 @@ public class LineComparison {
         double length2 = Math.sqrt(((a2 - a1)*(a2 - a1) +(b2 - b1) * (b2 - b1)));
         System.out.println("The length of line 2 is :" + length2);
 
-        if (length1 == length2){
-            System.out.println(" Both the lines are equal");
+        if (length1 > length2) {
+            System.out.println("Line 1 is greater than Line 2");
         } 
+	else if (length1 < length2) {
+	    System.out.println("Line 1 is smaller than Line 2");
+	}
 	else {
-            System.out.println("Both the lines are not equal");
+            System.out.println("Both the lines are equal");
         }
     }
 }
