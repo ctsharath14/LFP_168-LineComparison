@@ -6,25 +6,19 @@ public class LineComparison {
 	public static void main(String[] args) {
 	System.out.println("Welcome to Line Comparison Computation Program");
 	Scanner scan = new Scanner(System.in);
-	double x1 = 0;	
-	double y1 = 0;
-	double x2 = 0;
-	double y2 = 0;
-	double length = 0;
 	
 	System.out.println("Please enter X1 Coordinate");
-	x1 = scan.nextInt();
+	double x1 = scan.nextDouble();
 	System.out.println("Please enter Y1 Coordinate");
-	y1 = scan.nextInt();
+	double y1 = scan.nextDouble();
 	System.out.println("Please enter X2 Coordinate");
-	x2 = scan.nextInt();
+	double x2 = scan.nextDouble();
 	System.out.println("Please enter Y2 Coordinate");
-	y2 = scan.nextInt();
+	double y2 = scan.nextDouble();
 
 	scan.close();
 
-	length = (Math.sqrt(((x2-x1) * (x2-x1)) + ((y2-y1) * (y2-y1))));
+	double length = (Math.sqrt(((x2-x1) * (x2-x1)) + ((y2-y1) * (y2-y1))));
 	System.out.println("Length between 2 points is : "+length);
 	}
-} 
-	
+}
